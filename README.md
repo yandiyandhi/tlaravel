@@ -1,8 +1,3 @@
-## Login
-
-username = admin
-password = admin123
-
 ## 1 Menggunakan Artisan tanpa Docker
 
 ### Persyaratan
