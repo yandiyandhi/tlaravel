@@ -1,3 +1,44 @@
+## Alur Aplikasi
+
+### Login
+
+-   username
+-   password
+
+### Tambah Kategori
+
+-   Pilih Master Data
+-   Pilih Category
+-   Pilih Add Category
+-   Pilih Edit Category
+-   Pilih Delete Category
+
+### Tambah Produk
+
+-   Pilih Master Data
+-   Pilih Product
+-   Pilih Add Product
+-   Pilih Edit Product
+-   Pilih Delete Product
+
+### Validasi & Keamanan
+
+-   Validasi standar input
+-   Tidak bisa hapus kategori yang masih digunakan produk
+-   Menggunakan Soft Delete
+-   Aktivity Log
+
+### Alasan
+
+-   Kategori tidak bisa dihapus jika masih digunakan produk, agar tidak ada produk yang tidak memiliki kategori.
+-   Bisa di restore jika di perlukan di kemudian hari.
+-   Aktivity untuk mempermudah dalam audit internal.
+
+### Lib
+
+-   Breeze
+-   Vuexy Template
+
 ## 1 Menggunakan Artisan tanpa Docker
 
 ### Persyaratan
@@ -9,13 +50,13 @@
 
 # Setup 1
 
-git clone https://github.com/yandiyandhi/tlaravel.git
-cd tlaravel
-cp .env.example .env
-composer install
-php artisan key:generate
-php artisan migrate
-php artisan migrate:fresh --seed
+-   git clone https://github.com/yandiyandhi/tlaravel.git
+-   cd tlaravel
+-   cp .env.example .env
+-   composer install
+-   php artisan key:generate
+-   php artisan migrate
+-   php artisan migrate:fresh --seed
 
 ## 2 Menggunakan Docker
 
